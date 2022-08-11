@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  background-color: black;
+  color: #fff;
+}
+
+header {
+  border-bottom: 5px solid orange;
+}
+
+header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px 0;
+}
+
+header .nav h2 {
+  font-size: 2rem;
+}
+
+header .nav .searchbox {
+  width: 350px;
+  position: relative;
+}
+
+header .nav .searchbox input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 25px;
+  padding: 8px;
+  outline: none;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+  border: 1px solid lightgray;
+}
+
+header .nav .searchbox input:focus {
+  -webkit-box-shadow: 0 0 5px orange;
+          box-shadow: 0 0 5px orange;
+  border: 1px solid orange;
+}
+
+header .nav .searchbox i {
+  position: absolute;
+  top: 25%;
+  right: 4%;
+  color: black;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+header .nav .searchbox i:hover {
+  color: orange;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.grid {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.img {
+  width: 380px;
+  height: 200px;
+  margin-top: 15px;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 2px;
+  border: 1px solid rgba(128, 128, 128, 0.42);
+}
+
+@media (max-width: 768px) {
+  .img {
+    width: 100%;
+  }
+  .nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav h2 {
+    padding: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .searchbox {
+    width: 80%;
+    margin: auto;
+  }
+  .searchbox input {
+    font-size: 0.7rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
