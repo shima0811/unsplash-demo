@@ -2,7 +2,6 @@ const _search=document.getElementById("search")
 const _grid=document.getElementsByClassName("grid")[0]
 window.addEventListener("load",daynightmode)
 _search.addEventListener("keydown", function(event){
-    console.log(event)
     if(event.key==="Enter"){
         loadimg()
     }
@@ -40,7 +39,6 @@ function removeimg(){
 function daynightmode(){
     const _date=new Date()
     const _houre=_date.getHours()
-    console.log(_houre)
     if(_houre=>7 && _houre<=19){
         document.body.style.backgroundColor="whitesmoke"
         document.body.style.color="black"
