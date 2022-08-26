@@ -39,7 +39,7 @@ function removeimg(){
 function daynightmode(){
     const _date=new Date()
     const _houre=_date.getHours()
-    if(_houre=>7 && _houre<=19){
+    if(_houre>=7 && _houre<=19){
         document.body.style.backgroundColor="whitesmoke"
         document.body.style.color="black"
     }
